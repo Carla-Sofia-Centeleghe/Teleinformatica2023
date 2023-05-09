@@ -1,0 +1,25 @@
+*** Add switches
+*** Add router
+*** Add hosts
+*** Add router links
+*** Add hosts links
+*** Starting network
+*** Configuring hosts
+r0 r1 r2 h1 h2 
+*** Starting controllers
+*** Starting switches
+*** Post configure switches and hosts
+*** Starting controller
+
+*** Starting 4 switches
+s1 s2 s3 s4 ...
+*** Starting CLI:
+mininet> pingall
+*** Ping: testing ping reachability
+r0 -> r1 r2 h1 h2 
+r1 -> r0 r2 h1 h2 
+r2 -> r0 r1 h1 h2 
+h1 -> r0 r1 r2 h2 
+h2 -> r0 r1 r2 h1 
+*** Results: 0% dropped (20/20 received)
+mininet> 
